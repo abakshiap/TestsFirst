@@ -1,0 +1,8 @@
+SELECT
+  id,
+  client_name,
+  framework,
+  period,
+  created_at
+FROM audit_sessions
+ORDER BY created_at DESC;

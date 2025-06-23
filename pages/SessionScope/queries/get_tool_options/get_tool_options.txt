@@ -1,0 +1,1 @@
+SELECT DISTINCT unnest(tool_tags) AS tool FROM tests WHERE tool_tags IS NOT NULL;

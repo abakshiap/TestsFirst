@@ -1,0 +1,1 @@
+SELECT DISTINCT area FROM tests WHERE area IS NOT NULL ORDER BY area;

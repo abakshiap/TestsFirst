@@ -1,0 +1,10 @@
+INSERT INTO audit_sessions (client_name, framework, period)
+VALUES (
+  {{ clientInput.text }},
+  {{ frameworkDropdown.selectedOptionValue }},
+  {{
+    moment(startDateInput.selectedDate).format("YYYY-MM-DD") 
+    + " to " + 
+    moment(endDateInput.selectedDate).format("YYYY-MM-DD")
+  }}
+);

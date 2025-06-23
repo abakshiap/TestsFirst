@@ -1,11 +1,12 @@
 {
   "gitSyncId": "684c23e267e84e172d578723_74cd13f8-e34a-4f43-a08b-d80515688117",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 5000,
+          "bottomRow": 860,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "SessionScope",
+    "slug": "sessionscope"
   }
 }

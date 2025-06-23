@@ -18,7 +18,7 @@
   "icon": "burger",
   "pages": [
     {
-      "id": "Page1",
+      "id": "SessionScope",
       "isDefault": true
     }
   ],

@@ -1,0 +1,3 @@
+SELECT *
+FROM audit_sessions
+WHERE id = '{{ appsmith.store.selectedSessionId }}'
