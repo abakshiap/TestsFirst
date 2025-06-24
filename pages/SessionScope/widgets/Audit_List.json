@@ -111,7 +111,7 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onRowSelected": "{{  storeValue(\"selectedSessionId\", Audit_List.selectedRow.id);\n  get_session_details.run();\n}}",
+  "onRowSelected": "{{  navigateTo('AuditEngagementPage', {\n  session_id: Audit_List.selectedRow.id\n});\n}}",
   "originalBottomRow": 48,
   "originalTopRow": 20,
   "parentColumnSpace": 13.75,

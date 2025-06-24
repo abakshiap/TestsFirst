@@ -1,0 +1,2 @@
+SELECT * FROM audit_sessions
+WHERE id = {{ appsmith.URL.queryParams.session_id }}

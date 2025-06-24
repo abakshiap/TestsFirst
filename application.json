@@ -20,6 +20,10 @@
     {
       "id": "SessionScope",
       "isDefault": true
+    },
+    {
+      "id": "AuditEngagementPage",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

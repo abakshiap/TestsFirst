@@ -1,0 +1,4 @@
+SELECT DISTINCT unnest(tool_tags) AS tool
+FROM tests
+WHERE framework = {{ get_session_details.data[0]?.framework }}
+  AND tool_tags IS NOT NULL;

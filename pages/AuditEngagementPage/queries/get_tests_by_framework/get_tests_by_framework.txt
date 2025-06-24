@@ -1,0 +1,14 @@
+SELECT *
+FROM tests
+WHERE framework = '{{ get_session_details.data[0].framework }}'
+AND (
+  {{ areaFilter.selectedOptionValues.length === 0 }} OR
+  area = ANY({{ "{" + areaFilter.selectedOptionValues.map(a => '"' + a + '"').join(",") + "}" }}::text[])
+)
+AND (
+  {{ toolFilter.selectedOptionValues.length === 0 }} OR
+  EXISTS (
+    SELECT 1 FROM unnest(tool_tags) AS tag
+    WHERE tag = ANY({{ "{" + toolFilter.selectedOptionValues.map(t => '"' + t + '"').join(",") + "}" }}::text[])
+  )
+);

@@ -1,0 +1,5 @@
+SELECT DISTINCT area
+FROM tests
+WHERE framework = {{ get_session_details.data[0]?.framework }}
+  AND area IS NOT NULL
+ORDER BY area;
