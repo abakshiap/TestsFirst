@@ -29,7 +29,7 @@
     ],
     "name": "get_session_details",
     "pageId": "SessionScope",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
