@@ -1,0 +1,2 @@
+SELECT * FROM session_filters
+WHERE session_id = {{ appsmith.URL.queryParams.session_id }};

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 20,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  get_session_filters.data[0]?.selected_tools || [] ))(toolFilter.options, toolFilter.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,7 +50,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onOptionChange": "{{get_tests_by_framework.run()}}",
+  "onOptionChange": "{{save_session_filters.run().then(() => {\n  get_tests_by_framework.run();\n});}}",
   "optionLabel": "name",
   "optionValue": "value",
   "parentColumnSpace": 13.75,

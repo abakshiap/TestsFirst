@@ -1,0 +1,10 @@
+INSERT INTO session_filters (session_id, selected_areas, selected_tools)
+VALUES (
+  {{ appsmith.URL.queryParams.session_id }},
+  {{ areaFilter.selectedOptionValues }},
+  {{ toolFilter.selectedOptionValues }}
+)
+ON CONFLICT (session_id) DO
+UPDATE SET
+  selected_areas = EXCLUDED.selected_areas,
+  selected_tools = EXCLUDED.selected_tools;
