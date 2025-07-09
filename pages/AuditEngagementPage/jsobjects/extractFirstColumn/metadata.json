@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "684c23e267e84e172d578723_2d80226c-21b1-4589-bae1-1f15de7f4472",
+  "id": "AuditEngagementPage_extractFirstColumn",
+  "unpublishedCollection": {
+    "name": "extractFirstColumn",
+    "pageId": "AuditEngagementPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "extractedIds",
+        "value": "[]"
+      }
+    ]
+  }
+}
